@@ -184,7 +184,7 @@ img {
 }
 
 .header {
-	height: 100vh;
+	height: var(--app-height);
 	background: url(../images/img/header-bg.webp) center / cover no-repeat;
 	padding-block: 24px;
 	margin-bottom: 104px;

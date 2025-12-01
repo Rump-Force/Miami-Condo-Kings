@@ -1,3 +1,11 @@
+function setAppHeight() {
+	document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
+}
+
+window.addEventListener('resize', setAppHeight)
+window.addEventListener('load', setAppHeight)
+setAppHeight() // вызываем сразу
+
 document.querySelectorAll('.header__phone-trigger').forEach(button => {
 	button.addEventListener('click', () => {
 		const container = button.closest('.header__phone')
